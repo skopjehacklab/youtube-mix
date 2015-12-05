@@ -1,0 +1,38 @@
+#input1 {
+	border:2px solid #456879;
+	border-radius:10px;
+	height: 22px;
+	width: 230px;
+}
+
+body {
+	background-color: #777;
+}
+
+.btn {
+  background: #e3e5e6;
+  background-image: -webkit-linear-gradient(top, #e3e5e6, #f6effc);
+  background-image: -moz-linear-gradient(top, #e3e5e6, #f6effc);
+  background-image: -ms-linear-gradient(top, #e3e5e6, #f6effc);
+  background-image: -o-linear-gradient(top, #e3e5e6, #f6effc);
+  background-image: linear-gradient(to bottom, #e3e5e6, #f6effc);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 350px;
+}
+
+.btn:hover {
+  background: #a6a6a6;
+  background-image: -webkit-linear-gradient(top, #a6a6a6, #a1a1a1);
+  background-image: -moz-linear-gradient(top, #a6a6a6, #a1a1a1);
+  background-image: -ms-linear-gradient(top, #a6a6a6, #a1a1a1);
+  background-image: -o-linear-gradient(top, #a6a6a6, #a1a1a1);
+  background-image: linear-gradient(to bottom, #a6a6a6, #a1a1a1);
+  text-decoration: none;
+}
