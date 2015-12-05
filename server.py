@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__, static_url_path='/static')
 app.debug = True
 
@@ -12,6 +12,8 @@ def page_not_found(error):
 
 @app.route("/generate", methods=["POST"])
 def generate():
+	playlist = request.form["playlist"]
+	print playlist
 	return "Hello from generate"
 
 if __name__ == "__main__":
