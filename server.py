@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import os
+import subprocess
 app = Flask(__name__, static_url_path='/static')
 app.debug = True
 
@@ -26,6 +27,7 @@ def generate():
 	playlist_txt.write(playlist)
 	playlist_txt.close()
 
+	subprocess.call(["youtube-dl", "--output", "Music/%(autonumber)s.%(ext)s", "--extract-audio", "--audio-format", "mp3", "--audio-quality", "9", "--add-metadata", "--no-overwrites", "--continue", "--batch-file", "Music/playlist.txt"])
 
 	songs_txt = open("Music/songs.txt",'a')
 	songs_txt.close()
