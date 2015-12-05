@@ -1,16 +1,18 @@
-from flask import Flask
-app = Flask(__name__)
+from flask import Flask, render_template
+app = Flask(__name__, static_url_path='/static')
 app.debug = True
 
-index_html = open("index.html").read()
-
 @app.route("/")
-def index():
-    return index_html
+def home():
+    return render_template("index.html", title = 'Index')
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('page_not_found.html'), 404
 
 @app.route("/generate", methods=["POST"])
 def generate():
 	return "Hello from generate"
 
 if __name__ == "__main__":
-    app.run()
+    app.run('localhost', 5001)
