@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<title>Youtube mix</title>
-		<link rel="stylesheet" type="text/css" href="/static/theme.css">
-	</head>
-	<body >
-		<div id="content">
 
-			<center><textarea rows="4" cols="50" style="resize: none; width: 350px;"></textarea></center>
-			<center><button class="btn" type="button">Generate</button></center>  
-				
-		</div>
-	</body>
+    <head>
+        <title>Youtube mix</title>
+        <link rel="stylesheet" type="text/css" href="theme.css">
+    </head>
+
+    <body >
+        <form id="content" action="/generate" method="POST">
+            <center><textarea name="playlist" rows="4" cols="50" style="resize: none; width: 350px;"></textarea></center>
+            <center><input type="submit" class="btn" type="button"></center>  
+        </form>
+    </body>
 </html>
