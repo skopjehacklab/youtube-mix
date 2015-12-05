@@ -5,6 +5,11 @@
 	width: 230px;
 }
 
+h3 {
+  font-family: Helvetica;
+  color: #FFF;
+}
+
 body {
    background-image: url("imgs/bg.jpg");
    background-color: #E3E3E3;
@@ -33,4 +38,9 @@ body {
 
 #wrapper {
   margin-top: 25%;
+}
+
+p {
+  font-family: Helvetica;
+  color: #fff;
 }
